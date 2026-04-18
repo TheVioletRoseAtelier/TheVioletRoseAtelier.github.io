@@ -38,19 +38,6 @@
             color: #b87b9a;
         }
 
-        .logo-container {
-            text-align: center;
-            padding: 2rem 2rem 1rem 2rem;
-        }
-
-        .logo {
-    width: 100% !important;
-    max-width: 600px !important;
-    height: auto !important;
-    display: block;
-    margin: 0 auto;
-}
-
         .hero {
             min-height: 60vh;
             display: flex;
@@ -159,7 +146,6 @@
             h1 { font-size: 2.2rem; }
             .sacred-line { font-size: 1rem; }
             nav a { display: inline-block; margin: 0.5rem; font-size: 0.7rem; }
-            .logo { max-width: 120px; }
         }
     </style>
 </head>
@@ -173,8 +159,9 @@
     <a href="about.html">Story</a>
 </nav>
 
-<div class="logo-container">
-    <img src="TVRA.png" alt="The Violet Rose Atelier" class="logo">
+<!-- Logo with inline style that WILL work -->
+<div style="text-align: center; padding: 3rem 2rem 1rem 2rem;">
+    <img src="TVRA.png" alt="The Violet Rose Atelier" style="width: 70%; max-width: 450px; height: auto;">
 </div>
 
 <div class="hero">
