@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Violet Rose Atelier | Sacred Living Arks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0f;
+            color: #e8e3df;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #2a1a2a;
+        }
+
+        nav a {
+            color: #c4a8b5;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #b87b9a;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 3rem;
+            background: linear-gradient(rgba(10, 10, 15, 0.85), rgba(10, 10, 15, 0.95)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.1"><path fill="%23b87b9a" d="M50,15 L55,35 L75,35 L60,48 L65,68 L50,56 L35,68 L40,48 L25,35 L45,35 Z"/><path fill="%239b59b6" d="M50,5 L53,15 L63,15 L55,22 L58,32 L50,26 L42,32 L45,22 L37,15 L47,15 Z" transform="translate(0,45) scale(0.7) translate(0,-45)"/></svg>');
+            background-repeat: repeat;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
+            color: #d4a5b5;
+            font-weight: normal;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #9b8a7a;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #6b4c5a;
+        }
+
+        .btn {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid #b87b9a;
+            color: #b87b9a;
+            padding: 0.8rem 2rem;
+            margin-top: 2rem;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #b87b9a;
+            color: #0a0a0f;
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-dark {
+            background: #0f0f15;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #d4a5b5;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            color: #c4a8b5;
+            margin-bottom: 0.5rem;
+            font-weight: normal;
+        }
+
+        /* Cards for Arks */
+        .ark-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .ark-card {
+            background: #14141c;
+            padding: 1.5rem;
+            border-radius: 4px;
+            border: 1px solid #2a1a2a;
+            transition: transform 0.3s;
+        }
+
+        .ark-card:hover {
+            transform: translateY(-5px);
+            border-color: #b87b9a;
+        }
+
+        .ark-name {
+            color: #b87b9a;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .ark-price {
+            font-size: 0.8rem;
+            color: #9b8a7a;
+            margin-top: 1rem;
+        }
+
+        /* Trinity Section */
+        .trinity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .trinity-item {
+            padding: 1.5rem;
+            background: #14141c;
+            border-radius: 4px;
+        }
+
+        .trinity-item h3 {
+            color: #b87b9a;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem;
+            border-top: 1px solid #2a1a2a;
+            font-size: 0.8rem;
+            color: #6b4c5a;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            nav a { display: inline-block; margin: 0.5rem; font-size: 0.7rem; }
+            .section { padding: 2rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="ark.html">Living Arks</a>
+    <a href="shop.html">Shop</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="about.html">Story</a>
+    <a href="conservation.html">Archive</a>
+</nav>
+
+<div class="hero">
+    <div class="subtitle">The Violet Rose Atelier</div>
+    <h1>Sacred Living Arks<br>for a Changing World</h1>
+    <div class="tagline">Art • Magic • Conservation</div>
+    <a href="ark.html" class="btn">Enter the Atelier</a>
+</div>
+
+<div class="section">
+    <h2>Every Living Ark is a prayer.</h2>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem auto; color: #c4a8b5;">
+        We build magical biotopes — living artworks that preserve endangered species, 
+        honor the wild, and bring enchantment into sacred spaces. Named for Violet and Rose.
+    </p>
+</div>
+
+<div class="section section-dark">
+    <h2>The Trinity</h2>
+    <div class="trinity-grid">
+        <div class="trinity-item">
+            <h3>🌸 Violet Rose Atelier</h3>
+            <p style="font-size: 0.9rem;">For-Profit LLC — Creates Arks, plants, magical supplies, and workshops.</p>
+        </div>
+        <div class="trinity-item">
+            <h3>📜 Lilith Botanical Archive</h3>
+            <p style="font-size: 0.9rem;">Non-Profit — Conservation heart. Ex-situ preservation of threatened flora.</p>
+        </div>
+        <div class="trinity-item">
+            <h3>🕯️ Carmilla Conservatory</h3>
+            <p style="font-size: 0.9rem;">Educational outreach. Public display of Living Arks.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Signature Living Arks</h2>
+    <div class="ark-grid">
+        <div class="ark-card">
+            <div class="ark-name">🇻🇪 The Venezuelan Lifeboat Ark</div>
+            <p style="font-size: 0.85rem; margin: 0.5rem 0;">Nautilocalyx • Masdevallia • Peperomia</p>
+            <p style="font-size: 0.8rem;">A living spell of protection for a disappearing world.</p>
+            <div class="ark-price">Permanent Collection | $12,000+</div>
+        </div>
+        <div class="ark-card">
+            <div class="ark-name">🇲🇬 The Madagascan Ark</div>
+            <p style="font-size: 0.85rem; margin: 0.5rem 0;">Begonia lyallii • Angraecum • Microcoelia</p>
+            <p style="font-size: 0.8rem;">A prayer for the spiny forests of Madagascar.</p>
+            <div class="ark-price">Permanent Collection | $12,000+</div>
+        </div>
+        <div class="ark-card">
+            <div class="ark-name">🇯🇵 The Japanese Meditation Ark</div>
+            <p style="font-size: 0.85rem; margin: 0.5rem 0;">Neofinetia • Dendrobium • Selaginella tamariscina</p>
+            <p style="font-size: 0.8rem;">A portal to stillness. Samurai orchids.</p>
+            <div class="ark-price">Permanent Collection | $3,800</div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="ark.html" class="btn">View All Arks</a>
+    </div>
+</div>
+
+<div class="section section-dark" style="text-align: center;">
+    <h2>Build an Ark. Plant Magic. Conserve Life.</h2>
+    <p style="max-width: 600px; margin: 0 auto 1rem auto;">
+        Rare plant cuttings • Ark supply kits • Spell jars • Workshops • Poetry bundles
+    </p>
+    <a href="shop.html" class="btn">Explore the Shop</a>
+</div>
+
+<footer>
+    <p>The Violet Rose Atelier — Named for Violet and Rose</p>
+    <p style="margin-top: 0.5rem;">🌙 Every plant sold funds the Lilith Botanical Archive 🌙</p>
+    <p style="margin-top: 1rem;">thevioletroseatelier.com | @thevioletroseatelier</p>
+</footer>
+
+</body>
+</html>
