@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Violet Rose Atelier | Workshops</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0f;
+            color: #e8e3df;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #2a1a2a;
+        }
+
+        nav a {
+            color: #c4a8b5;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #b87b9a;
+        }
+
+        .logo-container {
+            text-align: center;
+            padding: 2rem 2rem 1rem 2rem;
+        }
+
+        .logo {
+            width: 70%;
+            max-width: 450px;
+            height: auto;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: #d4a5b5;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        .page-header p {
+            color: #9b8a7a;
+            margin-top: 0.5rem;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #b87b9a;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #9b8a7a;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .workshop-category {
+            background: #0f0f15;
+            border: 1px solid #2a1a2a;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .workshop-category h2 {
+            color: #d4a5b5;
+            font-size: 1.8rem;
+            font-weight: normal;
+            margin-bottom: 0.5rem;
+        }
+
+        .workshop-category .location {
+            color: #9b8a7a;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .workshop-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .workshop-item {
+            border-bottom: 1px solid #2a1a2a;
+            padding-bottom: 1.5rem;
+        }
+
+        .workshop-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .workshop-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .workshop-name {
+            font-size: 1.3rem;
+            color: #c4a8b5;
+            font-weight: normal;
+        }
+
+        .workshop-duration {
+            color: #6b4c5a;
+            font-size: 0.8rem;
+        }
+
+        .workshop-description {
+            color: #9b8a7a;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .consulting-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .consulting-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #2a1a2a;
+            padding-bottom: 0.75rem;
+        }
+
+        .consulting-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .consulting-name {
+            color: #c4a8b5;
+            font-size: 1.1rem;
+        }
+
+        .consulting-duration {
+            color: #6b4c5a;
+            font-size: 0.8rem;
+        }
+
+        .email-link {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid #b87b9a;
+            color: #b87b9a;
+            padding: 0.8rem 2rem;
+            margin-top: 1.5rem;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .email-link:hover {
+            background: #b87b9a;
+            color: #0a0a0f;
+        }
+
+        .contact-note {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            border-top: 1px solid #2a1a2a;
+            font-size: 0.8rem;
+            color: #6b4c5a;
+        }
+
+        @media (max-width: 768px) {
+            .section-title { font-size: 1.5rem; }
+            .workshop-category h2 { font-size: 1.4rem; }
+            .workshop-name { font-size: 1.1rem; }
+            .consulting-name { font-size: 1rem; }
+            .workshop-title { flex-direction: column; gap: 0.25rem; }
+            .consulting-item { flex-direction: column; gap: 0.25rem; }
+            nav a { display: inline-block; margin: 0.5rem; font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="shop.html">Shop</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="about.html">Story</a>
+</nav>
+
+<div class="logo-container">
+    <img src="TVRA.png" alt="The Violet Rose Atelier" class="logo">
+</div>
+
+<div class="page-header">
+    <h1>Workshops & Learning</h1>
+    <p>Learn to build, bless, and tend your own Living Ark.</p>
+</div>
+
+<div class="section">
+    <div class="section-title">Local Workshops</div>
+    <div class="section-subtitle">Available in Western Idaho and Eastern Oregon</div>
+
+    <div class="workshop-category">
+        <h2>Hands-On Ark Building</h2>
+        <div class="workshop-list">
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">Build Your First Living Ark</span>
+                    <span class="workshop-duration">4 hours</span>
+                </div>
+                <div class="workshop-description">Hands-on building of a small tabletop Ark. Choose your vessel, hardscape, and plants. Take home a finished Ark. All materials included.</div>
+            </div>
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">Sacred Ark Lamp Intensive</span>
+                    <span class="workshop-duration">4 hours</span>
+                </div>
+                <div class="workshop-description">Build a floor or desk lamp Ark. All materials including vessel and lamp kit. Take home a finished Sacred Ark Lamp.</div>
+            </div>
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">Conservation Arks: Building for the Future</span>
+                    <span class="workshop-duration">1.5 hours</span>
+                </div>
+                <div class="workshop-description">Focus on threatened species. Learn ex situ conservation principles. Build a small conservation Ark to take home.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="workshop-category">
+        <h2>Magic & Intention</h2>
+        <div class="workshop-list">
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">The Green Witch's Ark: Building with Intention</span>
+                    <span class="workshop-duration">2 hours</span>
+                </div>
+                <div class="workshop-description">Plant correspondences, blessing and consecration rituals. Learn to infuse your Ark with magic. Bring your own vessel or use one provided.</div>
+            </div>
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">Seasonal Rituals for the Ark Keeper</span>
+                    <span class="workshop-duration">1.5 hours</span>
+                </div>
+                <div class="workshop-description">Align your Ark with the Wheel of the Year. Learn rituals for Imbolc, Beltane, Lughnasadh, and Samhain. Take home a seasonal ritual kit.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="workshop-category">
+        <h2>Specialized Skills</h2>
+        <div class="workshop-list">
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">Sacred Substrates: Soil Alchemy for Arks</span>
+                    <span class="workshop-duration">1 hour</span>
+                </div>
+                <div class="workshop-description">Custom soil blending, drainage layers, and substrate science. Learn to work with fern fiber, charcoal, orchid bark, and moss. Take home a bag of your custom blend.</div>
+            </div>
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">Moss Magic for Your Ark</span>
+                    <span class="workshop-duration">1 hour</span>
+                </div>
+                <div class="workshop-description">Identify and work with live mosses. Learn moss propagation and how to create moss walls and carpets. Take home a moss starter kit.</div>
+            </div>
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">Orchid Mounting Workshop</span>
+                    <span class="workshop-duration">1.5 hours</span>
+                </div>
+                <div class="workshop-description">Mount epiphytic orchids on wood and stone. Learn care and maintenance. Take home a mounted orchid.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-title">Virtual Workshops</div>
+    <div class="section-subtitle">Available anywhere via video call. Live, interactive, and recorded for later viewing.</div>
+
+    <div class="workshop-category">
+        <h2>Building & Design</h2>
+        <div class="workshop-list">
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">Build Your First Living Ark</span>
+                    <span class="workshop-duration">2 hours</span>
+                </div>
+                <div class="workshop-description">Guided building alongside the instructor. Supply list sent in advance. You source your own vessel and materials or order a kit from us.</div>
+            </div>
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">The Green Witch's Ark: Building with Intention</span>
+                    <span class="workshop-duration">2 hours</span>
+                </div>
+                <div class="workshop-description">Plant correspondences lecture, ritual guidance, and personalized Q&A.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="workshop-category">
+        <h2>Magic & Ritual</h2>
+        <div class="workshop-list">
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">Plant Correspondences for Building Magical Arks</span>
+                    <span class="workshop-duration">1 hour</span>
+                </div>
+                <div class="workshop-description">Deep dive into 50+ plants, their magical uses, and care tips. Digital guide included.</div>
+            </div>
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">Bless Your Ark: A Ritual Intensive</span>
+                    <span class="workshop-duration">45 minutes</span>
+                </div>
+                <div class="workshop-description">Learn consecration rituals for your Ark. Digital ritual guide included.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="workshop-category">
+        <h2>Plant Care & Conservation</h2>
+        <div class="workshop-list">
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">Conservation Horticulture 101</span>
+                    <span class="workshop-duration">1.5 hours</span>
+                </div>
+                <div class="workshop-description">Principles of ex situ conservation and working with threatened species. Learn to build a biotope.</div>
+            </div>
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">Orchid Care for the Ark Keeper</span>
+                    <span class="workshop-duration">1 hour</span>
+                </div>
+                <div class="workshop-description">Miniature orchids in terrariums. Watering, light, mounting, and troubleshooting.</div>
+            </div>
+            <div class="workshop-item">
+                <div class="workshop-title">
+                    <span class="workshop-name">Moss Propagation and Care</span>
+                    <span class="workshop-duration">45 minutes</span>
+                </div>
+                <div class="workshop-description">Keeping moss alive and thriving. Propagation techniques for your Arks.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-title">Private Consulting</div>
+    <div class="section-subtitle">In-person or virtual. Personalized guidance for your unique needs.</div>
+
+    <div class="workshop-category">
+        <div class="consulting-list">
+            <div class="consulting-item">
+                <span class="consulting-name">Ark Troubleshooting</span>
+                <span class="consulting-duration">1 hour</span>
+            </div>
+            <div class="consulting-item">
+                <span class="consulting-name">Custom Ark Design Consultation</span>
+                <span class="consulting-duration">1 hour</span>
+            </div>
+            <div class="consulting-item">
+                <span class="consulting-name">Collection Curation</span>
+                <span class="consulting-duration">2 hours</span>
+            </div>
+            <div class="consulting-item">
+                <span class="consulting-name">Institutional Consulting</span>
+                <span class="consulting-duration">Custom</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-note">
+    <p>Interested in a workshop or private consultation?</p>
+    <a href="mailto:TheVioletRoseAtelier@gmail.com" class="email-link">Email Us to Book</a>
+    <p style="margin-top: 1rem; color: #6b4c5a; font-size: 0.8rem;">Tell us which workshop interests you and we will share available dates and details.</p>
+</div>
+
+<footer>
+    <p>The Violet Rose Atelier</p>
+    <p style="margin-top: 0.5rem;">Named for our daughters</p>
+    <p style="margin-top: 1rem;">thevioletroseatelier.com | @thevioletroseatelier</p>
+</footer>
+
+</body>
+</html>
