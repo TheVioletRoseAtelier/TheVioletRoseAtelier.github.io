@@ -38,6 +38,17 @@
             color: #b87b9a;
         }
 
+        .logo-container {
+            text-align: center;
+            padding: 2rem 2rem 1rem 2rem;
+        }
+
+        .logo {
+            width: 70%;
+            max-width: 450px;
+            height: auto;
+        }
+
         .hero {
             min-height: 60vh;
             display: flex;
@@ -134,6 +145,24 @@
             font-weight: normal;
         }
 
+        .featured-image {
+            text-align: center;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+
+        .featured-image img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #2a1a2a;
+        }
+
+        .image-caption {
+            color: #6b4c5a;
+            font-size: 0.7rem;
+            margin-top: 0.5rem;
+        }
+
         footer {
             text-align: center;
             padding: 3rem;
@@ -146,6 +175,7 @@
             h1 { font-size: 2.2rem; }
             .sacred-line { font-size: 1rem; }
             nav a { display: inline-block; margin: 0.5rem; font-size: 0.7rem; }
+            .logo { max-width: 120px; }
         }
     </style>
 </head>
@@ -159,9 +189,8 @@
     <a href="about.html">Story</a>
 </nav>
 
-<!-- Logo with inline style that WILL work -->
-<div style="text-align: center; padding: 3rem 2rem 1rem 2rem;">
-    <img src="TVRA.png" alt="The Violet Rose Atelier" style="width: 70%; max-width: 450px; height: auto;">
+<div class="logo-container">
+    <img src="TVRA.png" alt="The Violet Rose Atelier" class="logo">
 </div>
 
 <div class="hero">
@@ -169,6 +198,11 @@
     <div class="sacred-line">Sacred Living Arks for a Changing World</div>
     <div class="biotope-line">Biotope Art and Conservation Horticulture</div>
     <a href="portfolio.html" class="btn">View the Arks</a>
+</div>
+
+<div class="featured-image">
+    <img src="OrchidariumArcula.jpg" alt="Orchidarium Arcula collection">
+    <div class="image-caption">Orchidarium Arcula Collection</div>
 </div>
 
 <div class="section">
@@ -195,6 +229,11 @@
             <p>Infusing every Ark with intention. Every plant with purpose. Every space with enchantment.</p>
         </div>
     </div>
+</div>
+
+<div class="featured-image">
+    <img src="BegoniaArk1.jpg" alt="The Begonia Cosmopolitan Ark">
+    <div class="image-caption">The Begonia Cosmopolitan Ark</div>
 </div>
 
 <div class="section">
