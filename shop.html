@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Violet Rose Atelier | Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0f;
+            color: #e8e3df;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #2a1a2a;
+        }
+
+        nav a {
+            color: #c4a8b5;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #b87b9a;
+        }
+
+        .logo-container {
+            text-align: center;
+            padding: 2rem 2rem 1rem 2rem;
+        }
+
+        .logo {
+            width: 70%;
+            max-width: 450px;
+            height: auto;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: #d4a5b5;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        .page-header p {
+            color: #9b8a7a;
+            margin-top: 0.5rem;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #b87b9a;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #9b8a7a;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .product-card {
+            background: #0f0f15;
+            border: 1px solid #2a1a2a;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .product-card h3 {
+            color: #d4a5b5;
+            font-size: 1.6rem;
+            font-weight: normal;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-card .subhead {
+            color: #9b8a7a;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .product-card p {
+            color: #c4a8b5;
+            margin-bottom: 1rem;
+        }
+
+        .product-card ul {
+            color: #c4a8b5;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-card li {
+            margin-bottom: 0.25rem;
+        }
+
+        .product-image {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            border: 1px solid #2a1a2a;
+        }
+
+        .email-link {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid #b87b9a;
+            color: #b87b9a;
+            padding: 0.6rem 1.5rem;
+            margin-top: 1rem;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .email-link:hover {
+            background: #b87b9a;
+            color: #0a0a0f;
+        }
+
+        .contact-email {
+            color: #b87b9a;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            border-top: 1px solid #2a1a2a;
+            font-size: 0.8rem;
+            color: #6b4c5a;
+        }
+
+        @media (max-width: 768px) {
+            .section-title { font-size: 1.5rem; }
+            .product-card h3 { font-size: 1.3rem; }
+            nav a { display: inline-block; margin: 0.5rem; font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="shop.html">Shop</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="about.html">Story</a>
+</nav>
+
+<div class="logo-container">
+    <img src="TVRA.png" alt="The Violet Rose Atelier" class="logo">
+</div>
+
+<div class="page-header">
+    <h1>The Shop</h1>
+    <p>Living plants. Sacred supplies. Custom kits. Everything you need to build your own Ark.</p>
+</div>
+
+<!-- Section 1: Rare Plants -->
+<div class="section">
+    <div class="section-title">Rare Plants & Cuttings</div>
+    <div class="product-card">
+        <h3>Living Collection</h3>
+        <p>We maintain over 300 species and cultivars of plants with documented provenance, including Philodendron, Monstera, Begonia, Selaginella, and miniature orchids. Many are threatened or vulnerable species not available anywhere else.</p>
+        <p>Interested in available cuttings and rooted plants? Looking for rare and vulnerable species for your own Ark?</p>
+        <p>Send us an email at <span class="contact-email">TheVioletRoseAtelier@gmail.com</span> with your wishlist. We will let you know what we have propagating and help you source what you are looking for.</p>
+        <a href="mailto:TheVioletRoseAtelier@gmail.com" class="email-link">Email Your Wishlist</a>
+    </div>
+</div>
+
+<!-- Section 2: Free Consultation -->
+<div class="section">
+    <div class="section-title">Free Consultation</div>
+    <div class="product-card">
+        <h3>Let Us Help You Begin</h3>
+        <p>Not sure where to start? Reach out for a free consultation. We can help you design your first Living Ark, select the right plants for your space, or source specific species for your collection.</p>
+        <p>No obligation. Just guidance from fellow plant lovers and Ark builders.</p>
+        <a href="mailto:TheVioletRoseAtelier@gmail.com" class="email-link">Schedule a Consultation</a>
+    </div>
+</div>
+
+<!-- Section 3: Orchidarium Arcula Kit -->
+<div class="section">
+    <div class="product-image">
+        <img src="OrchidariumArcula.jpg" alt="Orchidarium Arcula collection">
+    </div>
+    <div class="section-title">Orchidarium Arcula Kit</div>
+    <div class="product-card">
+        <h3>Build Your Own Miniature Epiphytic Terrarium</h3>
+        <p>Each kit includes:</p>
+        <ul>
+            <li>Vessel</li>
+            <li>Drainage layer</li>
+            <li>Custom substrate blend</li>
+            <li>Live moss species</li>
+            <li>Authentic regional hardscape</li>
+            <li>Orchid mounting supplies</li>
+            <li>Selected orchids</li>
+            <li>Halo grow light</li>
+            <li>Spray bottle</li>
+        </ul>
+        <p>Send us an email and tell us which continent and region interests you, or share the specific orchids on your wishlist. We will build a kit tailored to your vision.</p>
+        <a href="mailto:TheVioletRoseAtelier@gmail.com" class="email-link">Request an Arcula Kit</a>
+    </div>
+</div>
+
+<!-- Section 4: Sacred Ark Lamp Kit -->
+<div class="section">
+    <div class="section-title">Sacred Ark Lamp Kit</div>
+    <div class="product-card">
+        <h3>Build Your Own Living Lamp Ark</h3>
+        <p>Our signature floor lamp Ark format, available as a build-it-yourself kit. Each kit includes:</p>
+        <ul>
+            <li>Barcelona recycled glass floor lamp vessel</li>
+            <li>Complete lamp kit with wiring and bulb</li>
+            <li>Custom substrate blend</li>
+            <li>Drainage layer</li>
+            <li>Live moss species</li>
+            <li>Hardscape elements</li>
+            <li>Selected plants suited for your chosen ecosystem</li>
+            <li>Care and assembly guide</li>
+        </ul>
+        <p>Choose your region or ecosystem type, and we will assemble a kit with the right plants and hardscape for your vision. Perfect for creating your own permanent collection Ark.</p>
+        <a href="mailto:TheVioletRoseAtelier@gmail.com" class="email-link">Request a Lamp Ark Kit</a>
+    </div>
+</div>
+
+<!-- Section 5: Digital Guides -->
+<div class="section">
+    <div class="section-title">Digital Guides</div>
+    <div class="product-card">
+        <h3>Learn at Your Own Pace</h3>
+        <p>Instant delivery via email. Each guide is written for both the practical builder and the magical practitioner.</p>
+        <ul>
+            <li><strong>Plant Correspondences for Building Magical Arks</strong> - 50+ plants, magical uses, and care tips</li>
+            <li><strong>Seasonal Rituals for the Ark Keeper</strong> - Guided rituals for Imbolc, Beltane, Lughnasadh, and Samhain</li>
+            <li><strong>Bless Your Ark: A Ritual Guide</strong> - A short ebook for consecrating your ecosystem</li>
+        </ul>
+        <a href="mailto:TheVioletRoseAtelier@gmail.com" class="email-link">Email to Order Digital Guides</a>
+    </div>
+</div>
+
+<!-- Section 6: Spell Kits -->
+<div class="section">
+    <div class="section-title">Spell Kits for Ark Keepers</div>
+    <div class="product-card">
+        <h3>Bless, Protect, and Prosper</h3>
+        <p>Each kit is assembled with intention and includes a hand-written blessing card.</p>
+        <ul>
+            <li><strong>Ark Blessing Kit</strong> - Moon water, blessing candle, selenite wand, blessing card to consecrate a new Ark</li>
+            <li><strong>Protection Spell Jar for Your Ark</strong> - Dried rose petals, violet leaves, protective crystals, miniature selaginella cutting, intention card</li>
+            <li><strong>Prosperity Charm for Arks</strong> - Moss, lucky bamboo, citrine, pyrite, coin, spell card to attract abundance</li>
+        </ul>
+        <a href="mailto:TheVioletRoseAtelier@gmail.com" class="email-link">Email to Order Spell Kits</a>
+    </div>
+</div>
+
+<!-- Section 7: Poetry Bundles -->
+<div class="section">
+    <div class="section-title">Poetry Bundles</div>
+    <div class="product-card">
+        <h3>Poetry by Rose</h3>
+        <p>Hand-printed and signed. Each poem is a companion to your Ark.</p>
+        <ul>
+            <li><strong>Poetry Broadside</strong> - Single poem, hand-printed, signed</li>
+            <li><strong>Poem + Plant Bundle</strong> - Custom poem written for you paired with a corresponding plant cutting for your Ark</li>
+        </ul>
+        <a href="mailto:TheVioletRoseAtelier@gmail.com" class="email-link">Email to Order Poetry</a>
+    </div>
+</div>
+
+<footer>
+    <p>The Violet Rose Atelier</p>
+    <p style="margin-top: 0.5rem;">Named for our daughters</p>
+    <p style="margin-top: 1rem;">thevioletroseatelier.com | @thevioletroseatelier</p>
+</footer>
+
+</body>
+</html>
