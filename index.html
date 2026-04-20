@@ -162,6 +162,69 @@
             margin-top: 0.5rem;
         }
 
+        .journey-section {
+            background: #0f0f15;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .journey-grid {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 2rem auto 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .journey-card {
+            background: #14141c;
+            border: 1px solid #2a1a2a;
+            border-radius: 8px;
+            padding: 1.5rem;
+            width: 220px;
+            text-align: center;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .journey-card:hover {
+            transform: translateY(-5px);
+            border-color: #b87b9a;
+        }
+
+        .journey-number {
+            color: #b87b9a;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .journey-card h3 {
+            color: #d4a5b5;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: normal;
+        }
+
+        .journey-card p {
+            color: #9b8a7a;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .journey-link {
+            color: #b87b9a;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .journey-link:hover {
+            color: #d4a5b5;
+        }
+
         footer {
             text-align: center;
             padding: 3rem;
@@ -175,6 +238,7 @@
             .sacred-line { font-size: 1rem; }
             .credibility-line { font-size: 0.75rem; }
             nav a { display: inline-block; margin: 0.5rem; font-size: 0.7rem; }
+            .journey-card { width: 100%; max-width: 280px; }
         }
     </style>
 </head>
@@ -243,6 +307,37 @@
         Rare plant cuttings. Ark supply kits. Workshops. Poetry bundles.
     </p>
     <a href="shop.html" class="btn">Explore the Shop</a>
+</div>
+
+<!-- Start Your Ark Journey Section -->
+<div class="journey-section">
+    <h2>Start Your Ark Journey</h2>
+    <div class="journey-grid">
+        <div class="journey-card">
+            <div class="journey-number">1</div>
+            <h3>Explore the Archive</h3>
+            <p>View our documented Living Arks and Orchidarium Arcula collection</p>
+            <a href="portfolio.html" class="journey-link">View Portfolio →</a>
+        </div>
+        <div class="journey-card">
+            <div class="journey-number">2</div>
+            <h3>Build a Cloud Forest Kit</h3>
+            <p>Start with our flagship Orchidarium Arcula kit</p>
+            <a href="shop.html#cloud-forest-kit" class="journey-link">Explore the Kit →</a>
+        </div>
+        <div class="journey-card">
+            <div class="journey-number">3</div>
+            <h3>Commission a Living Ark</h3>
+            <p>Request a custom biotope installation for your space</p>
+            <a href="mailto:TheVioletRoseAtelier@gmail.com" class="journey-link">Inquire →</a>
+        </div>
+        <div class="journey-card">
+            <div class="journey-number">4</div>
+            <h3>Join a Workshop</h3>
+            <p>Learn to build, bless, and tend your own Ark</p>
+            <a href="workshops.html" class="journey-link">View Workshops →</a>
+        </div>
+    </div>
 </div>
 
 <footer>
