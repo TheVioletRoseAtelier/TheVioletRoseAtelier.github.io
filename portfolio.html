@@ -222,6 +222,39 @@
             color: #6b4c5a;
         }
 
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #b87b9a;
+            color: #0a0a0f;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: #d4a5b5;
+            transform: translateY(-3px);
+        }
+
         @media (max-width: 768px) {
             .ark-item {
                 flex-direction: column;
@@ -230,6 +263,13 @@
             .section-title { font-size: 1.5rem; }
             .ark-name { font-size: 1.4rem; }
             nav a { display: inline-block; margin: 0.5rem; font-size: 0.7rem; }
+            .back-to-top {
+                bottom: 1rem;
+                right: 1rem;
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
@@ -623,6 +663,26 @@
     <p style="margin-top: 0.5rem;">Named for our daughters</p>
     <p style="margin-top: 1rem;">thevioletroseatelier.com | @thevioletroseatelier</p>
 </footer>
+
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top" id="backToTop">↑</a>
+
+<script>
+    const backToTopButton = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+    
+    backToTopButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
 
 </body>
 </html>
