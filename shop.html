@@ -196,6 +196,54 @@
             border: 1px solid #2a1a2a;
         }
 
+        .metadata-block {
+            background: #1a1a24;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 3px solid #b87b9a;
+        }
+
+        .metadata-block p {
+            margin-bottom: 0.25rem;
+            font-size: 0.85rem;
+        }
+
+        .metadata-block strong {
+            color: #d4a5b5;
+            font-weight: normal;
+        }
+
+        .process-block {
+            background: #14141c;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+
+        .process-steps {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            flex: 1;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        .step-number {
+            color: #b87b9a;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
         .email-link {
             display: inline-block;
             background: transparent;
@@ -232,6 +280,9 @@
             .product-card h3 { font-size: 1.3rem; }
             nav a { display: inline-block; margin: 0.5rem; font-size: 0.7rem; }
             .image-row img { max-width: 100%; }
+            .process-steps { flex-direction: column; }
+            .step { border-bottom: 1px solid #2a1a2a; padding-bottom: 1rem; }
+            .step:last-child { border-bottom: none; }
         }
     </style>
 </head>
@@ -303,6 +354,15 @@
             <img src="OrchidariumArcula11Ecuador1.jpg" alt="Orchidarium Arcula N°11 — Ecuadorian Cordillera close up">
             <div class="image-caption">Orchidarium Arcula N°11 — Ecuadorian Cordillera</div>
         </div>
+
+        <div class="metadata-block">
+            <p><strong>Biotope Type:</strong> Montane Cloud Forest</p>
+            <p><strong>Elevation Range:</strong> 1,200–2,000 meters</p>
+            <p><strong>Humidity Range:</strong> 75–95%</p>
+            <p><strong>Difficulty Level:</strong> Intermediate</p>
+            <p><strong>Estimated Establishment Time:</strong> 2–6 weeks</p>
+            <p><strong>Included Materials:</strong> Glass vessel, drainage layer, custom substrate blend, live moss species, mounting branch, hardscape components, halo grow light, spray bottle, care and assembly guide</p>
+        </div>
         
         <p>Select from:</p>
         <ul>
@@ -313,6 +373,7 @@
             <li>Or suggest your own region</li>
         </ul>
         <p>Includes region-appropriate hardscape, cloud forest orchids (species vary by availability), mosses from similar elevation ranges, and specialized cloud forest substrate blend.</p>
+        <p><strong>Optional Species Add-Ons:</strong> Miniature cloud forest orchids, epiphytic mosses, liverworts, Selaginella species. Plants and specialty mosses are selected individually and priced according to rarity and availability.</p>
         <p><em>Email us with your chosen region. We will confirm species availability and provide a quote.</em></p>
         <a href="mailto:TheVioletRoseAtelier@gmail.com" class="email-link">Request a Custom Kit</a>
     </div>
@@ -372,6 +433,32 @@
             <li><strong>Poem + Plant Bundle</strong> - Custom poem written for you paired with a corresponding plant cutting for your Ark</li>
         </ul>
         <a href="mailto:TheVioletRoseAtelier@gmail.com" class="email-link">Email to Order Poetry</a>
+    </div>
+</div>
+
+<!-- How to Order Section -->
+<div class="section">
+    <div class="section-title">How to Order</div>
+    <div class="process-block">
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <p>Select your base kit or plant wishlist</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <p>Contact us with your biotope interests or specific species</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <p>We curate plant and material options based on availability</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <p>Your custom kit is assembled, blessed, and shipped</p>
+            </div>
+        </div>
+        <a href="mailto:TheVioletRoseAtelier@gmail.com" class="email-link">Start Your Order</a>
     </div>
 </div>
 
